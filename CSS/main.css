@@ -34,9 +34,11 @@ aside {
     
 }
 #fonctionnement h2 {
-    margin-bottom: 15px;
-
+    margin-bottom: 23px;
+    font-size: 21px;
 }
+
+#fonctionnement button:hover { background: rgb(245, 235, 255);}
 
 
 #restaurants img {
@@ -48,15 +50,25 @@ aside {
     margin-bottom: 10px;
 }
 
+#restaurants i {
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	/* mix-blend-mode: lighten; */
+	margin-right: 20px;
+	line-height: 2px;
+	
+}
+
 #restaurants {
     width: 100%;
     height: auto;
-    background-color: white;
     display: flex;
     flex-direction: column;
     padding: 20px 20px;
     background: #f2f2f2;
-    margin-top: 60px;
+    margin-top: 35px;
 }
 #restaurants .card {
 	width: 100%;
@@ -64,10 +76,8 @@ aside {
 	margin: 10px 0;
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 	border-radius: 20px;
-
-	display: grid;
-	gap: 6px;
 }
+
 #restaurants .img {
 	width: 100%;
 	height: 170px;
@@ -76,9 +86,9 @@ aside {
 	border-radius: 12px 12px 0 0;
 }
 #restaurants h3 {
-    font-size: medium;
-    margin-left: 12px;
-    margin-top: 5px;
+	font-size: medium;
+	margin-left: 12px;
+	margin-top: 12px;
 }
 #restaurants p {
     font-size: smaller;
@@ -124,6 +134,11 @@ ul {
 
 a {
     text-decoration: none;
-
     color: rgb(255, 255, 255);
+}
+
+footer i {
+	color: rgb(255, 255, 255);
+	padding: 0px 7px 0 0;
+	font-size: 13px;
 }
