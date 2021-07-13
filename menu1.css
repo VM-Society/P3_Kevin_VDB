@@ -33,6 +33,7 @@ header a {
 main img {
     width: 100%;
 	height: 210px;
+    background-repeat: no-repeat;
     object-fit: cover;
     margin-top: -70px;
 }
@@ -87,9 +88,14 @@ main{
     background: white;
 }
 
-#entrées h3 {
+#entrées h2 {
+	width: 40px;
 	font-size: medium;
+	border-bottom: solid 3px #00e6b0;
 }
+
+#entrées h3 {font-size: medium;}
+
 #entrées p {
 	margin: 0;
 	font-size: smaller;
@@ -133,9 +139,14 @@ main{
     background: white;
 }
 
-#plats h3 {
+#plats h2 {
+	width: 40px;
 	font-size: medium;
+	border-bottom: solid 3px #00e6b0;
 }
+
+#plats h3 {font-size: medium;}
+
 #plats p {
 	margin: 0;
 	font-size: smaller;
@@ -179,9 +190,13 @@ main{
     background: white;
 }
 
-#desserts h3 {
+#desserts h2 {
+	width: 40px;
 	font-size: medium;
+	border-bottom: solid 3px #00e6b0;
 }
+#desserts h3 {font-size: medium;}
+
 #desserts p {
 	margin: 0;
 	font-size: smaller;
@@ -199,6 +214,10 @@ button {
 	margin: 35px 70px;
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
 	background: linear-gradient(176deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+}
+button:hover {
+	background: linear-gradient(176deg, rgb(173, 120, 236) 0%, rgb(240, 125, 207) 0%, rgb(171, 117, 236) 100%);
+
 }
 button span  {
     color: white;
