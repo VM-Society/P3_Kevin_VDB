@@ -17,8 +17,6 @@ body {
     font-family: roboto,sans-serif;
 }
 
-
-
 header i {
     position: absolute;
     top: 2%;
@@ -28,6 +26,10 @@ header i {
 
 header a {
     padding: 0px 20px;
+}
+h1 {
+	font-family: Shrikhand;
+	height: 19px;
 }
 
 main img {
@@ -49,23 +51,27 @@ main img {
 main{
     background: #f2f2f2;
     border-radius: 11px 11px 0 0;
-    height: 1252px;
+    height: 1335px;
     margin-top: 80px;
 }
 
 #entrées h2 {
+	width: 40px;
+	height: 27px;
     margin-bottom: 10px;
+	margin-top: 45px;
+	font-size: medium;
+	border-bottom: solid 3px #99e2d0;
+	opacity: 0.7;
 }
 
 #entrées i {
 	font-size: 24px;
 	display: flex;
-	align-items: center;
 	justify-content: end;
+	margin-right: 24px;
+	line-height: 0px;
 	/* mix-blend-mode: lighten; */
-	margin-right: 20px;
-	line-height: 2px;
-	
 }
 
 #entrées {
@@ -86,12 +92,7 @@ main{
 	padding: 15px;
 	/* display: flex; */
     background: white;
-}
-
-#entrées h2 {
-	width: 40px;
-	font-size: medium;
-	border-bottom: solid 3px #00e6b0;
+	cursor: pointer;
 }
 
 #entrées h3 {font-size: medium;}
@@ -101,12 +102,22 @@ main{
 	font-size: smaller;
 	white-space: nowrap;
 	overflow: hidden;
+	opacity: 0.5;
 }
 
+/* p b {
+	font-weight: bold;
+} */
 
 #plats h2 {
+	width: 40px;
+	height: 27px;
+	font-size: medium;
+	border-bottom: solid 3px #99e2d0;
     margin-bottom: 10px;
+	opacity: 0.7;
 }
+
 
 #plats i {
 	font-size: 24px;
@@ -137,12 +148,7 @@ main{
 	padding: 15px;
 	/* display: flex; */
     background: white;
-}
-
-#plats h2 {
-	width: 40px;
-	font-size: medium;
-	border-bottom: solid 3px #00e6b0;
+	cursor: pointer;
 }
 
 #plats h3 {font-size: medium;}
@@ -152,11 +158,17 @@ main{
 	font-size: smaller;
 	white-space: nowrap;
 	overflow: hidden;
+	opacity: 0.5;
 }
 
 
 #desserts h2 {
+	width: 40px;
+	height: 27px;
+	font-size: medium;
+	border-bottom: solid 3px #99e2d0;
     margin-bottom: 10px;
+	opacity: 0.7;
 }
 
 #desserts i {
@@ -188,13 +200,9 @@ main{
 	padding: 15px;
 	/* display: flex; */
     background: white;
+	cursor: pointer;
 }
 
-#desserts h2 {
-	width: 40px;
-	font-size: medium;
-	border-bottom: solid 3px #00e6b0;
-}
 #desserts h3 {font-size: medium;}
 
 #desserts p {
@@ -202,6 +210,7 @@ main{
 	font-size: smaller;
 	white-space: nowrap;
 	overflow: hidden;
+	opacity: 0.5;
 }
 
 
@@ -233,7 +242,6 @@ footer {
 	
     display: flex;
 	flex-direction: column;
-	gap: 40px;
 }
 
  nav {
@@ -262,6 +270,6 @@ a {
 
 footer i {
 	color: rgb(255, 255, 255);
-	padding: 0px 7px 0 0;
-	font-size: 13px;
+	padding: 0px 5px 0 0;
+	font-size: 12px;
 }
