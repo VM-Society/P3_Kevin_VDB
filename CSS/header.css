@@ -30,13 +30,13 @@ form {
 }
     
 form input {
-    width: 100%;
-    height: 45px;
-        
-    border-left: none;
-    border-right: none;
-    border-block-start-color: #ffffff;
-    cursor: pointer;
+	width: 100%;
+	height: 45px;
+	border-left: none;
+	border-right: none;
+	border-top-style: solid;
+	border-bottom: none;
+	cursor: pointer;
 }
     
 label {
