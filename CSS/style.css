@@ -30,13 +30,9 @@ body {
 
 
    
-
-
-
-
     @media (min-width: 768px) {  
     
-        .container, footer {
+            .container, footer {
             max-width: none;
         }
     }
