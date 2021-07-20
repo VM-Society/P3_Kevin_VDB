@@ -7,28 +7,31 @@ main {
 	position: absolute;
 	top: 464px;
 	right: 285px;
-	padding: 4px 9px;
+	padding: 3px 8px;
 	border-radius: 999px;
 	color: white;
 	background: #9356DC;
+	font-size: small;
 }
 .number2 {
 	position: absolute;
 	top: 550px;
 	right: 285px;
-	padding: 4px 9px;
+	padding: 3px 8px;
 	border-radius: 999px;
 	color: white;
 	background: #9356DC;
+	font-size: small;
 }
 .number3 {
 	position: absolute;
 	top: 633px;
 	right: 285px;
-	padding: 4px 9px;
+	padding: 3px 8px;
 	border-radius: 999px;
 	color: white;
 	background: #9356DC;
+	font-size: small; 
 }
 
 
@@ -55,7 +58,7 @@ aside i {font-size: 15px;}
 aside {margin-left: 20px;}
 
 
-#fonctionnement button:hover {color: rgb(130, 5, 214);}
+#fonctionnement button:hover i {color: rgb(130, 5, 214);}
 
 
 #fonctionnement {margin-top: 50px;}
@@ -87,16 +90,14 @@ aside {margin-left: 20px;}
 	margin-right: 20px;
 	line-height: 2px;
 
-	/* transform: scaleX(1); */
 }
 #restaurants i:hover {
-	transform-origin: 0% 50%;
-	transform: scaleY(1);
-    transition: transform 1000ms cubic-bezier(.32,0,.07,1);
-	background: linear-gradient(176deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
 
 }
 
+#restaurants div i {
+	font-size: 24px;
+}
 
 #restaurants {
     width: 100%;
