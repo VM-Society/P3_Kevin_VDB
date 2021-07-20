@@ -60,6 +60,13 @@ h1 {
 	margin-left: 15px;
 }
 
+.card b {
+	display: flex;
+	justify-content: flex-end;
+	font-size: smaller;
+	opacity: 0.8;
+}
+
 #entrées h2 {
 	width: 40px;
 	height: 27px;
@@ -119,19 +126,19 @@ h1 {
 	cursor: pointer;
 }
 
-#entrées h3 {font-size: medium;}
+#entrées h3 {
+	font-size: medium;
+	opacity: 0.8;
+}
 
 #entrées p {
 	margin: 0;
 	font-size: smaller;
 	white-space: nowrap;
 	overflow: hidden;
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
-/* p b {
-	font-weight: bold;
-} */
 
 #plats h2 {
 	width: 40px;
@@ -175,14 +182,17 @@ h1 {
 	cursor: pointer;
 }
 
-#plats h3 {font-size: medium;}
+#plats h3 {
+	font-size: medium;
+	opacity: 0.8;
+}
 
 #plats p {
 	margin: 0;
 	font-size: smaller;
 	white-space: nowrap;
 	overflow: hidden;
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 
@@ -227,14 +237,17 @@ h1 {
 	cursor: pointer;
 }
 
-#desserts h3 {font-size: medium;}
+#desserts h3 {
+	font-size: medium;
+	opacity: 0.8;
+}
 
 #desserts p {
 	margin: 0;
 	font-size: smaller;
 	white-space: nowrap;
 	overflow: hidden;
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 
