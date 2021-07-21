@@ -64,7 +64,7 @@ h1 {
 	display: flex;
 	justify-content: flex-end;
 	font-size: smaller;
-	opacity: 0.8;
+	opacity: 0.7;
 }
 
 #entrées h2 {
@@ -129,6 +129,7 @@ h1 {
 #entrées h3 {
 	font-size: medium;
 	opacity: 0.8;
+	margin: 1px;
 }
 
 #entrées p {
@@ -137,6 +138,7 @@ h1 {
 	white-space: nowrap;
 	overflow: hidden;
 	opacity: 0.6;
+	margin-bottom: -16px;
 }
 
 
@@ -177,7 +179,6 @@ h1 {
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 	border-radius: 20px;
 	padding: 15px;
-	/* display: flex; */
     background: white;
 	cursor: pointer;
 }
@@ -185,6 +186,7 @@ h1 {
 #plats h3 {
 	font-size: medium;
 	opacity: 0.8;
+	margin: 1px;
 }
 
 #plats p {
@@ -193,6 +195,7 @@ h1 {
 	white-space: nowrap;
 	overflow: hidden;
 	opacity: 0.6;
+	margin-bottom: -16px;
 }
 
 
@@ -232,7 +235,6 @@ h1 {
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 	border-radius: 20px;
 	padding: 15px;
-	/* display: flex; */
     background: white;
 	cursor: pointer;
 }
@@ -240,6 +242,7 @@ h1 {
 #desserts h3 {
 	font-size: medium;
 	opacity: 0.8;
+	margin: 1px;
 }
 
 #desserts p {
@@ -248,6 +251,7 @@ h1 {
 	white-space: nowrap;
 	overflow: hidden;
 	opacity: 0.6;
+	margin-bottom: -16px;
 }
 
 
