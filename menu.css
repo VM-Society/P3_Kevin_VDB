@@ -30,10 +30,8 @@ header a {
 #home img {
 	width: 45%;
 	height: 24px;
-	margin-left: 25%;
-	margin-top: 1px;
-	display: flex;
-	justify-content: center;
+	margin-left: 16%;
+	margin-top: 20px;
 }
 
 header img {
@@ -58,13 +56,6 @@ h1 {
 	height: 19px;
 	margin-top: 28px;
 	margin-left: 15px;
-}
-
-.card b {
-	display: flex;
-	justify-content: flex-end;
-	font-size: smaller;
-	opacity: 0.7;
 }
 
 #entrées h2 {
@@ -121,8 +112,7 @@ h1 {
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 	border-radius: 20px;
 	padding: 15px;
-	/* display: flex; */
-    background: white;
+	background: white;
 	cursor: pointer;
 }
 
@@ -139,6 +129,12 @@ h1 {
 	overflow: hidden;
 	opacity: 0.6;
 	margin-bottom: -16px;
+}
+b {
+	display: flex;
+	justify-content: flex-end;
+	font-size: smaller;
+	opacity: 0.7;
 }
 
 
@@ -314,3 +310,77 @@ footer i {
 	padding: 0px 5px 0 0;
 	font-size: 12px;
 }
+
+	@media (min-width: 768px) {
+		
+		#home img {
+			width: 45%;
+			height: 60px;
+			margin-left: 21%;
+		}
+
+		header i {
+			top: 3%;
+			font-size: 30px;
+		}
+
+		h1 {font-size: xx-large;}
+
+		main {height: 1200px;}
+
+		#entrées i {font-size: xx-large;}
+
+		#entrées h2 {font-size: larger;}
+
+		#entrées h3 {font-size: larger;}
+
+		#entrées p {font-size: large;}
+		
+		b {font-size: larger;}
+
+		#plats i {font-size: xx-large;}
+
+		#plats h2 {font-size: larger;}
+
+		#plats h3 {font-size: larger;}
+
+		#plats p {font-size: large;}
+
+		#desserts i {font-size: xx-large;}
+
+		#desserts h2 {font-size: larger;}
+
+		#desserts h3 {font-size: larger;}
+
+		#desserts p {font-size: large;}
+
+		button {
+			width: 40%;
+			height: 68px;
+			margin: 35px 225px;
+		}
+
+		footer {height: 150px;}
+
+		footer h2 {
+			font-size: 35px;
+			margin-left: 248px;
+		}
+
+		ul {
+			gap: 50px;
+			font-size: large;
+			flex-direction: initial;
+		}
+	}
+
+
+			
+		
+			
+	
+			
+		
+
+
+	

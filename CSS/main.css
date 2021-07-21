@@ -90,19 +90,6 @@ aside {margin-left: 20px;}
 	/* mix-blend-mode: lighten; */
 }
 
-#restaurants div i {
-	font-size: 24px;
-	transform: scale(1);
-    /* transition-property: transform; */
-    /* transition-duration: 1.5s; */
-}
-#restaurants div i:hover {
-    transform: scale(1);
-	background: purple;
-    color: purple;
-}
-
-
 #restaurants {
     width: 100%;
     height: auto;
@@ -204,3 +191,93 @@ footer i {
 	padding: 0px 5px 0 0;
 	font-size: 12px;
 }
+
+
+	@media (min-width: 768px) {
+
+		#fonctionnement h2 {
+			margin-bottom: 25px;
+			font-size: 30px;
+		}
+
+		aside button {
+			height: 70px;
+			width: 97%;
+			margin-bottom: 30px;
+		}
+
+		.number {
+			top: 476px;
+			right: 730px;
+			padding: 7px 12px;
+			font-size: medium;
+		}
+		.number2 {
+			top: 576px;
+			right: 730px;
+			padding: 7px 12px;
+			font-size: medium;
+		}
+		.number3 {
+			top: 676px;
+			right: 730px;
+			padding: 7px 12px;
+			font-size: medium;
+		}
+
+		aside i {font-size: 25px;}
+
+		aside span {
+			margin-left: 25px;
+			font-size: large;
+		}
+
+
+		#restaurants h2 {font-size: 30px;}
+
+		.n {
+			top: 905px;
+			right: 30px;
+			padding: 10px 20px;
+			font-size: medium;
+		}
+		.n2 {
+			top: 1166px;
+			right: 30px;
+			padding: 10px 20px;
+			font-size: medium;
+		}
+
+		#restaurants h3 {
+			font-size: x-large;
+			margin-top: 7px;
+		}
+
+		#restaurants p {font-size: large;}
+
+		#restaurants i {font-size: 30px;}
+
+		footer {height: 150px;}
+
+		footer h2 {
+			font-size: 35px;
+			margin-left: 248px;
+		}
+
+		ul {
+			gap: 50px;
+			font-size: large;
+			flex-direction: initial;
+		}
+
+		
+
+
+		
+			
+		
+		
+
+		
+
+	}

@@ -83,8 +83,41 @@ header button span  {
     color: white;
 }
     
+
+    @media (min-width: 768px) {
+
+        header p {opacity: 0.6;}
+        
+         #home img {
+            width: 40%;
+            height: 50px;
+            margin-left: 30%;
+            margin-top: 20px;
+        }
+             
+        label img {
+            height: 20px;
+            margin-left: 220px;
+        }
+            
+        input, ::placeholder {font-size: large; }
+            
+        h1 {margin: 25px 178px 10px;}
+
+        header button {
+            width: 30%;
+            height: 65px;
+            margin: 30px 262px;
+        }
+        
+        header button span  {font-size: medium;}
+    }
+
+
     
-    
+    @media (min-width: 1025px) {
+        
+    }
 
 
 
