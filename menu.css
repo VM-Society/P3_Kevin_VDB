@@ -27,11 +27,12 @@ header i {
 header a {
     padding: 0px 20px;
 }
+
 #home img {
 	width: 45%;
-	height: 24px;
-	margin-left: 16%;
-	margin-top: 20px;
+    height: 24px;
+    margin-left: 16%;
+    margin-top: 20px;
 }
 
 header img {
@@ -135,6 +136,13 @@ b {
 	justify-content: flex-end;
 	font-size: smaller;
 	opacity: 0.7;
+}
+
+#plats span {
+	display: flex;
+	justify-content: flex-end;
+	font-size: smaller;
+	opacity: 0.9;
 }
 
 
@@ -311,12 +319,14 @@ footer i {
 	font-size: 12px;
 }
 
+
 	@media (min-width: 768px) {
-		
+
 		#home img {
 			width: 45%;
 			height: 60px;
 			margin-left: 21%;
+			margin-top: 20px;
 		}
 
 		header i {
@@ -335,7 +345,7 @@ footer i {
 		#entrées h3 {font-size: larger;}
 
 		#entrées p {font-size: large;}
-		
+
 		b {font-size: larger;}
 
 		#plats i {font-size: xx-large;}
@@ -359,7 +369,7 @@ footer i {
 			height: 68px;
 			margin: 35px 225px;
 		}
-
+		
 		footer {height: 150px;}
 
 		footer h2 {
@@ -375,12 +385,25 @@ footer i {
 	}
 
 
-			
+	@media (min-width: 1025px) {
+
+		#home img {height: 80px;}
+
+		button {margin: 35px 280px;}
 		
-			
-	
-			
+		footer {height: 170px;}
+
+		footer h2 {
+			font-size: 40px;
+			margin-left: 350px;
+		}
+
+		ul {
+			gap: 78px;
+			font-size: x-large;
+		}
+    }
+
 		
 
-
-	
+		

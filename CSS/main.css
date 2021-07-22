@@ -233,29 +233,72 @@ footer i {
 		}
 
 
-		#restaurants h2 {font-size: 30px;}
+		#restaurants h2 {font-size: 35px;}
 
 		.n {
-			top: 905px;
-			right: 30px;
-			padding: 10px 20px;
+			top: 860px;
+			right: 410px;
+			padding: 7px 15px;
 			font-size: medium;
 		}
 		.n2 {
-			top: 1166px;
-			right: 30px;
-			padding: 10px 20px;
+			top: 860px;
+			right: 27px;
+			padding: 7px 15px;
 			font-size: medium;
 		}
 
 		#restaurants h3 {
 			font-size: x-large;
-			margin-top: 7px;
+			margin-top: 45px;
 		}
 
 		#restaurants p {font-size: large;}
 
 		#restaurants i {font-size: 30px;}
+
+		#restaurants {
+			margin: -10px 0px;
+			display: grid;
+			grid-template-columns: 48.5% 48.5%;
+			grid-template-rows: 28px 250px 250px;
+			column-gap: 30px;
+			row-gap: 25px;
+		}
+		#restaurants h2 {
+			align-self: end;
+			font-size: xx-large;
+		}      
+		#restaurants .card {
+			height: 250px;
+			margin: 1px auto;
+			border-radius: 20px;
+				
+			gap: 0px;
+			flex-direction: column;
+		}
+		#restaurants  .img {
+			height: 135px;
+		}
+		#restaurants .img img {
+			border-radius: 15px 15px 0 0;
+		}
+		#restaurants .card:nth-child(2) {
+			grid-column: 1/2;
+			grid-row: 2/3;      
+		}
+		#restaurants .card:nth-child(3) {
+			grid-column: 2/2;
+			grid-row: 2/3;
+		}
+		#restaurants .card:nth-child(4) {
+			grid-column: 1/2;
+			grid-row: 3/4;
+		}
+		#restaurants .card:nth-child(5) {
+			grid-column: 2/3;
+			grid-row: 3/4;
+		}
 
 		footer {height: 150px;}
 
@@ -269,15 +312,64 @@ footer i {
 			font-size: large;
 			flex-direction: initial;
 		}
-
-		
-
-
-		
-			
-		
-		
-
-		
-
 	}
+
+
+	@media (min-width: 1025px) {
+
+		#fonctionnement h2 {
+			margin-bottom: 35px;
+			font-size: 35px;
+		}
+
+		aside button {
+			height: 80px;
+			width: 98%;
+			margin-bottom: 35px;
+		}
+
+		.number {
+			top: 495px;
+			right: 985px;
+		}
+		.number2 {
+			top: 611px;
+			right: 985px;
+		}
+		.number3 {
+			top: 726px;
+			right: 985px;
+		}
+
+		aside i {font-size: 30px;}
+
+		aside span {font-size: x-large;}
+
+
+		#restaurants h2 {font-size: 35px;}
+
+		.n {
+			top: 920px;
+			right: 543px;
+			padding: 10px 20px;
+			font-size: medium;
+		}
+
+		.n2 {
+			top: 920px;
+			right: 35px;
+			padding: 10px 20px;
+			font-size: medium;
+		}
+
+		footer {height: 165px;}
+
+		footer h2 {
+			font-size: 40px;
+			margin-left: 345px;
+		}
+		ul {
+			gap: 78px;
+			font-size: x-large;
+		}
+    }

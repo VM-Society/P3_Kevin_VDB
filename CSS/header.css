@@ -116,7 +116,32 @@ header button span  {
 
     
     @media (min-width: 1025px) {
+
+        header p {opacity: 0.6;}
         
+         #home img {
+             margin-left: 29%;
+             height: 60px;
+        }
+             
+        label img {
+            height: 25px;
+            margin-left: 290px;
+        }
+            
+        input,  ::placeholder {
+            font-size: x-large;
+            padding-right: 30px;
+         }
+            
+        h1 {margin: 25px 310px 10px;}
+
+        header button {
+            height: 70px;
+            margin: 25px 345px;
+        }
+        
+        header button span  {font-size: large;}
     }
 
 
