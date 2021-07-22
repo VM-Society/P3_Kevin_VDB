@@ -9,16 +9,16 @@ header p {
     text-align: center;
     line-height: 18px;
     opacity: 0.4;
- }
+}
 
 #home img {
     width: 45%;
-    height: 24px;
+    height: 40px;
     margin-left: 27%;
     margin-top: 15px;
 }
 
-    
+
 form {
     width: 100%;
     height: 56px;
@@ -28,59 +28,99 @@ form {
     align-items: center;
     cursor: pointer;
 }
-    
+
 form input {
     width: 100%;
     height: 45px;
-        
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    border-top-style: solid;
+    border: none;
+    outline: 0;
+    box-shadow: 4px 8px 16px inset #B6B6B6;
     cursor: pointer;
 }
-    
+
 label {
     height: 16px;
     position: absolute;
     left: 64px;
     cursor: pointer;
 }
+
 label img {
     height: 15px;
 }
-    
-input, ::placeholder {
-    font-size: medium; 
+
+input,
+::placeholder {
+    font-size: medium;
     text-align: center;
     background: #e2e2e2;
 }
-    
+
 h1 {
-    display: flex;
     text-align: center;
     font-size: x-large;
     line-height: 30px;
-    margin: 25px 17px 10px;
+    margin: 25px 0 10px;
 }
+
 header button {
-	width: 65%;
-	height: 45px;
-	border: none;
-	border-radius: 30px;
-	cursor: pointer;
-	margin: 22px 55px;
-	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
-	background: linear-gradient(176deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    width: 65%;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 22px auto;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(176deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
 }
+
 header button:hover {
     background: linear-gradient(176deg, rgb(173, 120, 236) 0%, rgb(240, 125, 207) 0%, rgb(171, 117, 236) 100%);
     box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 
-header button span  {
+header button span {
     color: white;
+}
+
+
+@media (min-width: 768px) {
+
+    header p {
+        opacity: 0.6;
+    }
+
+    #home img {
+        width: 40%;
+        height: 50px;
+        margin-left: 30%;
+        margin-top: 20px;
+    }
+
+    label img {
+        height: 20px;
+        margin-left: 220px;
+    }
+
+    input,
+    ::placeholder {
+        font-size: large;
+    }
+
+    h1 {
+        margin: 25px 178px 10px;
+    }
+
+    header button {
+        width: 30%;
+        height: 65px;
+        margin: 30px 262px;
+    }
+
+    header button span {
+        font-size: medium;
+    }
 }
     
 

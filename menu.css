@@ -1,46 +1,48 @@
-:root { 
-    --main-bg-purple: #9356DC;
-    --main-bg-pink: #FF79DA;
-    --main-bg-green: #99E2D0;
-    --main-bg-gray: #f2f2f2;
+:root {
+	--main-bg-purple: #9356DC;
+	--main-bg-pink: #FF79DA;
+	--main-bg-green: #99E2D0;
+	--main-bg-gray: #f2f2f2;
 }
 
-*, ::before, ::after { 
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    font-family: roboto,sans-serif;
+	width: 100%;
+	height: 100vh;
+	font-family: roboto, sans-serif;
 }
 
 header i {
-    position: absolute;
-    top: 2%;
-    transform: translateY(50%);
-    color: black;
+	position: absolute;
+	top: 2%;
+	transform: translateY(50%);
+	color: black;
 }
 
 header a {
-    padding: 0px 20px;
+	padding: 0px 20px;
 }
 
 #home img {
 	width: 45%;
-    height: 24px;
-    margin-left: 16%;
-    margin-top: 20px;
+	height: 24px;
+	margin-left: 16%;
+	margin-top: 20px;
 }
 
 header img {
 	width: 100%;
 	height: 210px;
 	margin-top: 10px;
-    background-repeat: no-repeat;
-    object-fit: cover;
+	background-repeat: no-repeat;
+	object-fit: cover;
 }
 
 
@@ -62,7 +64,7 @@ h1 {
 #entrées h2 {
 	width: 40px;
 	height: 27px;
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 	margin-top: 45px;
 	font-size: medium;
 	border-bottom: solid 3px #99e2d0;
@@ -77,6 +79,7 @@ h1 {
 	line-height: 0px;
 	/* mix-blend-mode: lighten; */
 }
+
 #entrées :hover i {
 	background-color: rgb(255, 0, 255);
 }
@@ -84,15 +87,16 @@ h1 {
 #entrées div i {
 	font-size: 24px;
 	transform: scale(1);
-    /* transition-property: transform; */
-    transition-duration: 1.5s;
+	/* transition-property: transform; */
+	transition-duration: 1.5s;
 	/* transition: transform 450ms, background-color 300ms 150ms; */
 	background-color: rgb(255, 0, 255);
 }
+
 #entrées div:hover i {
-    transform: scale(1);
+	transform: scale(1);
 	background-color: rgb(255, 0, 255);
-    color: rgb(255, 0, 255);
+	color: rgb(255, 0, 255);
 	/* transform-origin: center center; */
 }
 
@@ -106,7 +110,7 @@ h1 {
 	border-radius: 35px 35px 0 0;
 }
 
-#entrées .card {
+/* #entrées .card {
 	width: 100%;
 	height: 70px;
 	margin: 8px 0;
@@ -115,43 +119,117 @@ h1 {
 	padding: 15px;
 	background: white;
 	cursor: pointer;
+} */
+
+/* animation card */
+.menu .card {
+	width: 100%;
+	height: 80px;
+	margin: 20px 0;
+	padding-left: 10px;
+	background-color: white;
+	cursor: pointer;
+	border-radius: 15px;
+	box-shadow: 4px 8px 16px rgba(255, 255, 255, 0.3);
+	display: grid;
+	grid-template-columns: 70% 30%;
+	grid-template-rows: 40px 40px;
+	align-items: center;
 }
 
-#entrées h3 {
+.menu .card h3 {
 	font-size: medium;
-	opacity: 0.8;
-	margin: 1px;
+	margin-bottom: 3px;
+	align-self: flex-end;
 }
 
-#entrées p {
-	margin: 0;
+.menu .card p {
+	grid-column: 1/2;
+	grid-row: 2/3;
+
 	font-size: smaller;
 	white-space: nowrap;
 	overflow: hidden;
-	opacity: 0.6;
-	margin-bottom: -16px;
-}
-b {
-	display: flex;
-	justify-content: flex-end;
-	font-size: smaller;
-	opacity: 0.7;
+	text-overflow: ellipsis;
 }
 
-#plats span {
+.menu .checkbox {
+	height: 100%;
+	grid-column: 2/3;
+	grid-row: 1/4;
 	display: flex;
-	justify-content: flex-end;
-	font-size: smaller;
-	opacity: 0.9;
+	column-gap: 20px;
+	cursor: pointer;
+
 }
 
+.menu .tarif {
+	margin: auto;
+	margin-bottom: 22px;
+}
+
+.menu .check {
+	display: none;
+}
+
+.menu .card .check #scales {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.menu .card:hover .check {
+	height: 100%;
+	width: 60%;
+	background-color: #99E2D0;
+	border-radius: 0 15px 15px 0;
+
+	display: flex;
+
+	animation: slidein 1000ms cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.menu .card:hover .check img {
+	margin: auto;
+	animation: rotate-up 0.65s linear both;
+}
+
+/* Animation checkbox */
+@keyframes slidein {
+	0% {
+		transform: scaleX(0.4);
+		transform-origin: 100% 100%;
+	}
+
+	100% {
+		transform: scaleX(1);
+		transform-origin: 100% 100%;
+	}
+}
+
+/* Animation logo checkbox */
+@keyframes rotate-up {
+	0% {
+		transform: scale(1) rotateZ(0);
+	}
+
+	50% {
+		transform: scale(2) rotateZ(180deg);
+	}
+
+	100% {
+		transform: scale(1) rotateZ(360deg);
+	}
+}
+
+/* fin animation card */
 
 #plats h2 {
 	width: 40px;
 	height: 27px;
 	font-size: medium;
 	border-bottom: solid 3px #99e2d0;
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 	opacity: 0.7;
 }
 
@@ -164,27 +242,17 @@ b {
 	/* mix-blend-mode: lighten; */
 	margin-right: 20px;
 	line-height: 2px;
-	
+
 }
 
 #plats {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 8px;
-    background: #f2f2f2;
-    margin-top: 35px;
-}
-#plats .card {
 	width: 100%;
-	height: 70px;
-	margin: 8px 0;
-	box-shadow: 0 0 10px rgba(0,0,0,0.3);
-	border-radius: 20px;
-	padding: 15px;
-    background: white;
-	cursor: pointer;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 0px 8px;
+	background: #f2f2f2;
+	margin-top: 35px;
 }
 
 #plats h3 {
@@ -208,7 +276,7 @@ b {
 	height: 27px;
 	font-size: medium;
 	border-bottom: solid 3px #99e2d0;
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 	opacity: 0.7;
 }
 
@@ -220,27 +288,17 @@ b {
 	/* mix-blend-mode: lighten; */
 	margin-right: 20px;
 	line-height: 2px;
-	
+
 }
 
 #desserts {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 8px;
-    background: #f2f2f2;
-    margin-top: 35px;
-}
-#desserts .card {
 	width: 100%;
-	height: 70px;
-	margin: 8px 0;
-	box-shadow: 0 0 10px rgba(0,0,0,0.3);
-	border-radius: 20px;
-	padding: 15px;
-    background: white;
-	cursor: pointer;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 0px 8px;
+	background: #f2f2f2;
+	margin-top: 35px;
 }
 
 #desserts h3 {
@@ -260,21 +318,23 @@ b {
 
 
 button {
-    width: 55%;
-    height: 45px;
+	width: 55%;
+	height: 45px;
 	border: none;
 	border-radius: 30px;
 	cursor: pointer;
 	margin: 35px 70px;
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
-	background: linear-gradient(176deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+	background: linear-gradient(176deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
 }
+
 button:hover {
 	background: linear-gradient(176deg, rgb(173, 120, 236) 0%, rgb(240, 125, 207) 0%, rgb(171, 117, 236) 100%);
 	box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.3);
 }
-button span  {
-    color: white;
+
+button span {
+	color: white;
 }
 
 
@@ -284,39 +344,136 @@ footer {
 	font-size: small;
 	padding: 20px 20px 0;
 	background-color: #312e2e;
-	
-    display: flex;
+
+	display: flex;
 	flex-direction: column;
 }
 
- nav {
-    width: 100%;
-    height: 135px;
+nav {
+	width: 100%;
+	height: 135px;
 }
 
 footer h2 {
-    margin-bottom: 13px;
-    font-size: 15px;
-    font-family: Shrikhand;
-    color: #fff;
+	margin-bottom: 13px;
+	font-size: 15px;
+	font-family: Shrikhand;
+	color: #fff;
 }
 
-ul { 
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+	text-decoration: none;
+	color: rgb(255, 255, 255);
 }
 
 footer i {
 	color: rgb(255, 255, 255);
 	padding: 0px 5px 0 0;
 	font-size: 12px;
+}
+
+
+@media (min-width: 768px) {
+
+	#home img {
+		width: 45%;
+		height: 60px;
+		margin-left: 21%;
+		margin-top: 20px;
+	}
+
+	header i {
+		top: 3%;
+		font-size: 30px;
+	}
+
+	h1 {
+		font-size: xx-large;
+	}
+
+	main {
+		height: 1200px;
+	}
+
+	#entrées i {
+		font-size: xx-large;
+	}
+
+	#entrées h2 {
+		font-size: larger;
+	}
+
+	#entrées h3 {
+		font-size: larger;
+	}
+
+	#entrées p {
+		font-size: large;
+	}
+
+	b {
+		font-size: larger;
+	}
+
+	#plats i {
+		font-size: xx-large;
+	}
+
+	#plats h2 {
+		font-size: larger;
+	}
+
+	#plats h3 {
+		font-size: larger;
+	}
+
+	#plats p {
+		font-size: large;
+	}
+
+	#desserts i {
+		font-size: xx-large;
+	}
+
+	#desserts h2 {
+		font-size: larger;
+	}
+
+	#desserts h3 {
+		font-size: larger;
+	}
+
+	#desserts p {
+		font-size: large;
+	}
+
+	button {
+		width: 40%;
+		height: 68px;
+		margin: 35px 225px;
+	}
+
+	footer {
+		height: 150px;
+	}
+
+	footer h2 {
+		font-size: 35px;
+		margin-left: 248px;
+	}
+
+	ul {
+		gap: 50px;
+		font-size: large;
+		flex-direction: initial;
+	}
 }
 
 
@@ -402,8 +559,8 @@ footer i {
 			gap: 78px;
 			font-size: x-large;
 		}
+
+
+
+		
     }
-
-		
-
-		

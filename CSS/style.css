@@ -27,16 +27,3 @@ body {
     background-position: center;
 }
 .card {cursor: pointer; background:white}
-
-
-   
-
-
-
-
-    @media (min-width: 768px) {  
-    
-        .container, footer {
-            max-width: none;
-        }
-    }
