@@ -32,8 +32,8 @@ header a {
 
 #home img {
 	width: 45%;
-	height: 24px;
-	margin-left: 16%;
+	height: 100%;
+	margin-left: 17%;
 	margin-top: 20px;
 }
 
@@ -49,7 +49,7 @@ header img {
 main {
 	background: #f2f2f2;
 	border-radius: 35px 35px 0 0;
-	height: 1180px;
+	height: 1505px;
 	margin-top: -45px;
 	position: relative;
 }
@@ -57,9 +57,35 @@ main {
 h1 {
 	font-family: Shrikhand;
 	height: 19px;
-	margin-top: 28px;
-	margin-left: 15px;
+	margin-top: 17px;
+	padding-top: 13px;
 }
+
+svg {
+	align-self: self-end;
+	padding-bottom: 25px;
+}
+
+svg:hover path,
+svg:active path {
+	fill: url(#bg);
+	stroke: transparent;
+	transition: .3s;
+}
+
+path {
+	fill: transparent;
+	stroke-width: 15px;
+	stroke: #333;
+}
+
+/* .main svg {
+	display: flex;
+	justify-content: end;
+	margin-right: 14px;
+	line-height: 0px;
+} */
+
 
 #entrées h2 {
 	width: 40px;
@@ -71,34 +97,6 @@ h1 {
 	opacity: 0.7;
 }
 
-#entrées i {
-	font-size: 24px;
-	display: flex;
-	justify-content: end;
-	margin-right: 14px;
-	line-height: 0px;
-	/* mix-blend-mode: lighten; */
-}
-
-#entrées :hover i {
-	background-color: rgb(255, 0, 255);
-}
-
-#entrées div i {
-	font-size: 24px;
-	transform: scale(1);
-	/* transition-property: transform; */
-	transition-duration: 1.5s;
-	/* transition: transform 450ms, background-color 300ms 150ms; */
-	background-color: rgb(255, 0, 255);
-}
-
-#entrées div:hover i {
-	transform: scale(1);
-	background-color: rgb(255, 0, 255);
-	color: rgb(255, 0, 255);
-	/* transform-origin: center center; */
-}
 
 #entrées {
 	width: 100%;
@@ -109,17 +107,6 @@ h1 {
 	background: #f2f2f2;
 	border-radius: 35px 35px 0 0;
 }
-
-/* #entrées .card {
-	width: 100%;
-	height: 70px;
-	margin: 8px 0;
-	box-shadow: 0 0 10px rgba(0,0,0,0.3);
-	border-radius: 20px;
-	padding: 15px;
-	background: white;
-	cursor: pointer;
-} */
 
 /* animation card */
 .menu .card {
@@ -239,7 +226,6 @@ h1 {
 	display: flex;
 	align-items: center;
 	justify-content: end;
-	/* mix-blend-mode: lighten; */
 	margin-right: 20px;
 	line-height: 2px;
 
@@ -267,7 +253,7 @@ h1 {
 	white-space: nowrap;
 	overflow: hidden;
 	opacity: 0.6;
-	margin-bottom: -16px;
+	margin-bottom: 3px;
 }
 
 
@@ -285,7 +271,6 @@ h1 {
 	display: flex;
 	align-items: center;
 	justify-content: end;
-	/* mix-blend-mode: lighten; */
 	margin-right: 20px;
 	line-height: 2px;
 
@@ -313,17 +298,17 @@ h1 {
 	white-space: nowrap;
 	overflow: hidden;
 	opacity: 0.6;
-	margin-bottom: -16px;
+	margin-bottom: 3px;
 }
 
 
-button {
+ button {
 	width: 55%;
 	height: 45px;
 	border: none;
 	border-radius: 30px;
 	cursor: pointer;
-	margin: 35px 70px;
+	margin: 14px 70px;
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
 	background: linear-gradient(176deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
 }
@@ -380,103 +365,6 @@ footer i {
 }
 
 
-@media (min-width: 768px) {
-
-	#home img {
-		width: 45%;
-		height: 60px;
-		margin-left: 21%;
-		margin-top: 20px;
-	}
-
-	header i {
-		top: 3%;
-		font-size: 30px;
-	}
-
-	h1 {
-		font-size: xx-large;
-	}
-
-	main {
-		height: 1200px;
-	}
-
-	#entrées i {
-		font-size: xx-large;
-	}
-
-	#entrées h2 {
-		font-size: larger;
-	}
-
-	#entrées h3 {
-		font-size: larger;
-	}
-
-	#entrées p {
-		font-size: large;
-	}
-
-	b {
-		font-size: larger;
-	}
-
-	#plats i {
-		font-size: xx-large;
-	}
-
-	#plats h2 {
-		font-size: larger;
-	}
-
-	#plats h3 {
-		font-size: larger;
-	}
-
-	#plats p {
-		font-size: large;
-	}
-
-	#desserts i {
-		font-size: xx-large;
-	}
-
-	#desserts h2 {
-		font-size: larger;
-	}
-
-	#desserts h3 {
-		font-size: larger;
-	}
-
-	#desserts p {
-		font-size: large;
-	}
-
-	button {
-		width: 40%;
-		height: 68px;
-		margin: 35px 225px;
-	}
-
-	footer {
-		height: 150px;
-	}
-
-	footer h2 {
-		font-size: 35px;
-		margin-left: 248px;
-	}
-
-	ul {
-		gap: 50px;
-		font-size: large;
-		flex-direction: initial;
-	}
-}
-
-
 	@media (min-width: 768px) {
 
 		#home img {
@@ -486,14 +374,25 @@ footer i {
 			margin-top: 20px;
 		}
 
+		header {height: 310px;}
+
 		header i {
 			top: 3%;
 			font-size: 30px;
 		}
 
-		h1 {font-size: xx-large;}
+		h1 {font-size: xx-large;
+			margin-left: 223px;
+		}
 
-		main {height: 1200px;}
+		svg {
+			padding-bottom: 9px;
+			width: 81px;
+		}
+
+		main {height: 1570px;}
+
+		.menu .card {box-shadow: 4px 0px 20px inset #B6B6B6;}
 
 		#entrées i {font-size: xx-large;}
 
@@ -545,6 +444,20 @@ footer i {
 	@media (min-width: 1025px) {
 
 		#home img {height: 80px;}
+
+		h1 {font-size: 50px;
+			margin-left: 255px;
+		}
+
+		svg {
+			padding-bottom: 45px;
+			width: 140px;
+			height: 111px;
+		}
+
+		main {
+			height: 1614px;
+		}
 
 		button {margin: 35px 280px;}
 		
