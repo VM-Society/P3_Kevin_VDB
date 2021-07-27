@@ -125,12 +125,22 @@ header button span {
 
     @media (min-width: 1025px) {
 
-        header p {opacity: 0.6;}
+        header {
+			height: 400px;
+		}
+
+        header p {
+            line-height: 62px;
+            opacity: 0.4;
+            font-size: x-large;
+        }
         
          #home img {
              margin-left: 29%;
              height: 60px;
         }
+
+        form {height: 80px;}
              
         label img {
             height: 25px;
@@ -142,27 +152,24 @@ header button span {
             padding-right: 30px;
          }
             
-        h1 {margin: 25px 310px 10px;}
-
-        header button {
-            height: 70px;
+         h1 {
+            margin: 25px 247px 10px;
+            font-size: xx-large;
         }
         
-        header button span  {font-size: large;}
+        header button span {font-size: x-large;}
     }
 
 
-        /* @media (min-width: 1500px) {
-
-            .container, body {
-                max-width: 1500px;
-            }
-
-            body {
-                background: rgb(153, 0, 255);
-                background: linear-gradient(176deg, rgb(173, 120, 236) 0%, rgb(240, 125, 207) 0%, rgb(171, 117, 236) 100%);
-            } 
-        } */
+    @media (min-width: 1500px) {
+        .container, footer {
+        max-width: 1500px;
+    }
+    
+    body {
+        background: linear-gradient(176deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+    }
+    }
 
         
 

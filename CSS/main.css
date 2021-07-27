@@ -221,7 +221,7 @@ stroke: #333;
 		aside button {
 			height: 70px;
 			width: 97%;
-			margin-bottom: 30px;
+			margin-bottom: 50px;
 		}
 
 		aside i {font-size: 25px;}
@@ -231,10 +231,12 @@ stroke: #333;
 			font-size: large;
 		}
 
-		.n {padding: 10px 20px;
+		.n {
+			padding: 6px 8px;
 			font-size: medium;
 		}
-		.n2 {padding: 10px 20px;
+		.n2 {
+			padding: 6px 8px;
 			font-size: medium;
 		}
 		
@@ -303,7 +305,7 @@ stroke: #333;
 
 		#restaurants .item {
 			display: grid;
-			grid-template-columns: 86% 9%;
+			grid-template-columns: 81% 9%;
 			grid-template-rows: 83px 36px;
 		}
 
@@ -326,36 +328,75 @@ stroke: #333;
 
 	@media (min-width: 1025px) {
 
+		
 		#fonctionnement h2 {
 			margin-bottom: 35px;
 			font-size: 35px;
 		}
 
+		#fonctionnement {
+			padding: 22px 20px;
+			background: #f2f2f2;
+		}
+
 		svg {
 			align-self: end;
-			width: 90px;
+			width: 45px;
 		}
 
 		#restaurants .item {
 			display: grid;
-			grid-template-columns: 85% 9%;
-			grid-template-rows: 85px 36px;
+			grid-template-columns: 80% 9%;
+			grid-template-rows: 81px 34px;
+		}
+
+		aside {
+			margin-left: 5px;
+			background: #f2f2f2;
 		}
 
 		aside button {
-			height: 80px;
+			height: 120px;
 			width: 98%;
-			margin-bottom: 35px;
+			margin-bottom: 84px;
 		}
 
 		aside i {font-size: 30px;}
 
 		aside span {font-size: x-large;}
 
-		#fonctionnement .number {transform: translate(-50%, 110%);}
+		#fonctionnement .number {
+			transform: translate(-50%, 105%);
+			padding: 9px 14px;
+			font-size: medium;
+		}
+
+		#restaurants {
+			display: grid;
+			grid-template-columns: 48.5% 48.5%;
+			grid-template-rows: 28px 250px 250px;
+			column-gap: 21px;
+			row-gap: 51px;
+			padding: 14px 25px 0px 0px;
+			margin: 34px 0px;
+		}
+
+		main {
+			flex-direction: row-reverse;
+			background: #f2f2f2;
+			height: 720px;
+		}
 
 
-		#restaurants h2 {font-size: 35px;}
+		#restaurants h2 {
+			font-size: 35px;
+			margin-bottom: -37px;
+		}
+
+		#restaurants h3 {
+			font-size: large;
+			margin-top: 50px;
+		}
 
 		
 		footer {height: 165px;}
@@ -364,6 +405,7 @@ stroke: #333;
 			font-size: 40px;
 			margin-left: 345px;
 		}
+
 		ul {
 			gap: 78px;
 			font-size: x-large;
