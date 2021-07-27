@@ -49,22 +49,27 @@ header img {
 main {
 	background: #f2f2f2;
 	border-radius: 35px 35px 0 0;
-	height: 1350px;
+	height: 1290px;
 	margin-top: -45px;
 	position: relative;
+}
+
+.titre {
+	display: grid;
+	grid-template-columns: 85% 6%;
+	grid-template-rows: 57px;
 }
 
 h1 {
 	font-family: Shrikhand;
 	height: 19px;
-	margin-top: 17px;
-	padding-top: 13px;
+	padding-top: 19px;
 	font-size: x-large;
+	justify-self: center;
 }
 
-svg {
-	align-self: self-end;
-	padding-bottom: 25px;
+.titre svg {
+	align-self: flex-end;
 }
 
 svg:hover path,
@@ -79,13 +84,6 @@ path {
 	stroke-width: 15px;
 	stroke: #333;
 }
-
-/* .main svg {
-	display: flex;
-	justify-content: end;
-	margin-right: 14px;
-	line-height: 0px;
-} */
 
 
 #entrées h2 {
@@ -214,43 +212,43 @@ path {
 	}
 }
 #entrées .scale {
-	-webkit-animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 #entrées .scale2 {
-	-webkit-animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
+	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
 #entrées .scale3 {
-	-webkit-animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.1s both;
+	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.1s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
 }
 
 
 #plats .scale {
-	-webkit-animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 #plats .scale2 {
-	-webkit-animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
+	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
 #plats .scale3 {
-	-webkit-animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.1s both;
+	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.1s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
 }
 
 
 #desserts .scale {
-	-webkit-animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 #desserts .scale2 {
-	-webkit-animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
+	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
 #desserts .scale3 {
-	-webkit-animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.1s both;
+	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.1s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
 }
 
@@ -304,6 +302,7 @@ path {
 	flex-direction: column;
 	padding: 0px 8px;
 	background: #f2f2f2;
+	margin-top: 25px;
 }
 
 #plats h3 {
@@ -348,6 +347,7 @@ path {
 	flex-direction: column;
 	padding: 0px 8px;
 	background: #f2f2f2;
+	margin-top: 25px;
 }
 
 #desserts h3 {
@@ -445,16 +445,25 @@ footer i {
 			font-size: 30px;
 		}
 
-		h1 {font-size: xx-large;
-			margin-left: 223px;
+		.titre {
+			grid-template-columns: 85% 15%;
+			grid-template-rows: 60px;
 		}
 
-		svg {
-			padding-bottom: 9px;
+		
+
+		h1 {
+			font-size: xx-large;
+			justify-self: self-start;
+			padding-left: 20px;
+		}
+
+		.titre svg {
 			width: 81px;
+		    align-self: end;
 		}
 
-		main {height: 1415px;}
+		main {height: 1340px;}
 
 		.menu .card {box-shadow: 4px 0px 20px inset #B6B6B6;}
 
@@ -509,18 +518,19 @@ footer i {
 
 		#home img {height: 80px;}
 
-		h1 {font-size: 50px;
-			margin-left: 255px;
-		}
+		h1 {font-size: 50px;}
 
-		svg {
-			padding-bottom: 45px;
+		main {height: 1360px;}
+
+		.titre svg {
 			width: 140px;
 			height: 111px;
+			align-self: baseline;
 		}
 
-		main {
-			height: 1480px;
+		.titre {
+			grid-template-columns: 85% 15%;
+			grid-template-rows: 85px;
 		}
 
 		button {margin: 35px 280px;}
