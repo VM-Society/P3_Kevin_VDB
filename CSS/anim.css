@@ -1,86 +1,66 @@
-/* .loading {
-	height: 500px;
-    color: #9356DC;
-    font-size: larger;
-    text-align: center;
-}
 
 .loader {
-	width: 50px;
-	height: 50px;
-	display: inline-block;
-	vertical-align: middle;
-	position: relative;
-}
-.loader-quart {
-	border-radius: 50px;
-	border: 6px solid #FF79DA;
-}
-
-loader-quart :after {
-	position: absolute;
-	top: -6px; 
-	left: -6px;
-	bottom: -6px;
-	right: -6px;
-	border-radius: 50px;
-	border: 6px solid;
-	border-top-color: #9356DC;
-	animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-	0%{ animation: rotate(0deg); transform: rotate(0deg); }
-	100%{ animation: rotate(360deg); transform: rotate(360deg); }
-} */
-
-
-
-
-.loader {
+    z-index: 1000000;
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 50%;
+    left: 12%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    animation: rotate-in-ver 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 5 both;
-    animation: rotate-in-ver 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 5 both;
-}
-
-.dnone {
-    animation: dnone 2s;
+    animation: rotate-in-ver 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3 both;
 }
 
 .lettre {
     color: #FF79DA;
     animation: flash 1.2s linear infinite;
-    font-size: 200px;
+    font-size: 50px;
 }
 
 @keyframes flash {
-    0% { color: #FF79DA; }
-    90% {color: #9356DC; }
+    0% {
+        color: #FF79DA;
+    }
+
+    90% {
+        color: #9356DC;
+    }
+
 }
 
 @keyframes rotate-in-ver {
     0% {
-      transform: rotateY(-360deg);
-              transform: rotateY(-360deg);
-      opacity: 0;
+        transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+        opacity: 0;
     }
+
+    80% {
+        transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+
     100% {
-      transform: rotateY(0deg);
-              transform: rotateY(0deg);
-      opacity: 1;
+        opacity: 0;
+        display: none;
+        width: 0;
+        height: 0;
     }
-  }
+}
 
-  @keyframes dnone {
 
-      100% {
-          opacity: 0;
-          display: none;
-          width: 0;
-          height: 0;
-        }
+    @media (min-width: 768px) {
+
+        .loader {left: 16%;}
+
+        .lettre {font-size: 100px;}
         
+    }
+
+    @media (min-width: 1025px) {
+
+        .loader {left: 16%;}
+
+        .lettre {font-size: 130px;}
     }

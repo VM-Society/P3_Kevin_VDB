@@ -261,7 +261,10 @@ loader-quart::after {
 			height: 70px;
 			width: 97%;
 			margin-bottom: 50px;
+			box-shadow: 10px 9px 10px 0px rgba(0, 0, 0, 0.2);
+			background: #f5f5f5;
 		}
+		
 
 		aside i {font-size: 25px;}
 
@@ -269,6 +272,7 @@ loader-quart::after {
 			margin-left: 25px;
 			font-size: large;
 		}
+
 
 		.n {
 			padding: 6px 8px;
@@ -278,6 +282,7 @@ loader-quart::after {
 			padding: 6px 8px;
 			font-size: medium;
 		}
+		
 		
 
 		#fonctionnement .number {
@@ -375,7 +380,7 @@ loader-quart::after {
 
 		#fonctionnement {
 			padding: 22px 20px;
-			background: #f2f2f2;
+			background: #bdbdbd;
 		}
 
 		svg {
@@ -391,7 +396,7 @@ loader-quart::after {
 
 		aside {
 			margin-left: 5px;
-			background: #f2f2f2;
+			background: #bdbdbd;
 		}
 
 		aside button {
@@ -418,11 +423,12 @@ loader-quart::after {
 			row-gap: 51px;
 			padding: 14px 25px 0px 0px;
 			margin: 34px 0px;
+			background: #bdbdbd;
 		}
 
 		main {
 			flex-direction: row-reverse;
-			background: #f2f2f2;
+			background: #bdbdbd;
 			height: 720px;
 		}
 

@@ -168,6 +168,8 @@ header button span {
     
     body {
         background: linear-gradient(176deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+        display: grid;
+        justify-content: center;
     }
     }
 

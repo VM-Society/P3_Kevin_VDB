@@ -372,7 +372,7 @@ path {
 	border: none;
 	border-radius: 30px;
 	cursor: pointer;
-	margin: 14px 70px;
+	margin: 14px 23%;                                            
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
 	background: linear-gradient(176deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
 }
@@ -433,9 +433,8 @@ footer i {
 
 		#home img {
 			width: 45%;
-			height: 60px;
+			height: 60%;
 			margin-left: 21%;
-			margin-top: 20px;
 		}
 
 		header {height: 310px;}
@@ -472,6 +471,7 @@ footer i {
 
 		main {height: 1340px;}
 
+
 		.menu .card {box-shadow: 4px 0px 20px inset #B6B6B6;}
 
 		#entrées i {font-size: xx-large;}
@@ -503,7 +503,7 @@ footer i {
 		button {
 			width: 40%;
 			height: 68px;
-			margin: 35px 190px;
+			margin: 35px 30%;
 		}
 
 		button span {
@@ -531,13 +531,14 @@ footer i {
 
 		footer h2 {
 			font-size: 35px;
-			margin-left: 248px;
+			display: grid;
+			justify-items: center;
 		}
 
 		ul {
-			gap: 50px;
 			font-size: large;
 			flex-direction: initial;
+			justify-content: space-around;
 		}
 	}
 
@@ -550,8 +551,6 @@ footer i {
 			font-family: roboto, sans-serif;
 			background: #E879FF;
 		}
-
-		#home img {height: 80px;}
 
 		header img {
 			width: 100%;
@@ -598,14 +597,10 @@ footer i {
 		
 		footer {height: 170px;}
 
-		footer h2 {
-			font-size: 40px;
-			margin-left: 350px;
-		}
+		footer h2 {font-size: 40px;}
 
 		ul {
 			gap: 78px;
 			font-size: x-large;
 		}
-	
     }
