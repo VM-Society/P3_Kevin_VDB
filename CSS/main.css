@@ -359,13 +359,14 @@ loader-quart::after {
 
 		footer h2 {
 			font-size: 35px;
-			margin-left: 248px;
+			display: grid;
+			justify-items: center;
 		}
 
 		ul {
-			gap: 50px;
 			font-size: large;
 			flex-direction: initial;
+			justify-content: space-around;
 		}
 	}
 
@@ -446,13 +447,7 @@ loader-quart::after {
 		
 		footer {height: 165px;}
 
-		footer h2 {
-			font-size: 40px;
-			margin-left: 345px;
-		}
+		footer h2 {font-size: 40px;}
 
-		ul {
-			gap: 78px;
-			font-size: x-large;
-		}
+		ul {font-size: x-large;}
     }

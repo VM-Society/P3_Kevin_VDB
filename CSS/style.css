@@ -11,19 +11,12 @@
     padding: 0;
 }
 
-
-
 body {
     width: 100%;
     height: auto;
     font-family: roboto,sans-serif;
     margin: auto;
 }
-
-
-/* .loading {
-
-} */
 
 .card .img img {
     width: 100%;
