@@ -121,7 +121,7 @@ path {
 	display: grid;
 	grid-template-columns: 70% 30%;
 	grid-template-rows: 40px 40px;
-	align-items: center;	
+	align-items: center;
 }
 
 .menu .card h3 {
@@ -211,18 +211,22 @@ path {
 		transform: scale(1) rotateZ(360deg);
 	}
 }
+
 #entrées .scale {
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
+
 #entrées .scale2 {
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
+
 #entrées .scale3 {
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.1s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
 }
+
 #entrées .scale4 {
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.4s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
@@ -233,10 +237,12 @@ path {
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
+
 #plats .scale2 {
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
+
 #plats .scale3 {
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.1s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
@@ -247,32 +253,35 @@ path {
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
+
 #desserts .scale2 {
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
+
 #desserts .scale3 {
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.1s both;
 	animation: scale-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
 }
 
 
- @keyframes scale-in-top {
+@keyframes scale-in-top {
 	0% {
-	  transform: scale(0);
-			  transform: scale(0);
-	  transform-origin: 50% 0%;
-			  transform-origin: 50% 0%;
-	  opacity: 1;
+		transform: scale(0);
+		transform: scale(0);
+		transform-origin: 50% 0%;
+		transform-origin: 50% 0%;
+		opacity: 1;
 	}
+
 	100% {
-	  transform: scale(1);
-			  transform: scale(1);
-	  transform-origin: 50% 0%;
-			  transform-origin: 50% 0%;
-	  opacity: 1;
+		transform: scale(1);
+		transform: scale(1);
+		transform-origin: 50% 0%;
+		transform-origin: 50% 0%;
+		opacity: 1;
 	}
-  }
+}
 
 /* fin animation card */
 
@@ -336,7 +345,7 @@ path {
 	padding: 0px 8px;
 	background: #f2f2f2;
 	margin-top: 25px;
-	margin-bottom: 15px;
+	margin-bottom: -15px;
 }
 
 #desserts h3 {
@@ -409,172 +418,211 @@ footer i {
 }
 
 
-	@media (min-width: 768px) {
+@media (min-width: 768px) {
 
-		#home img {
-			width: 35%;
-			height: 60%;
-			margin-left: 27%;
-		}
+	#home img {
+		width: 35%;
+		height: 60%;
+		margin-left: 27%;
+	}
 
-		#home {
-			position: fixed;
-    		z-index: 2;
-			background: linear-gradient(176deg, rgb(173, 120, 236) 0%, rgb(240, 125, 207) 0%, rgb(171, 117, 236) 100%);
-    		width: 100%;
-		}
+	#home {
+		position: fixed;
+		z-index: 2;
+		background: linear-gradient(176deg, rgb(173, 120, 236) 0%, rgb(240, 125, 207) 0%, rgb(171, 117, 236) 100%);
+		width: 100%;
+	}
 
-		header {height: 310px;}
+	header {
+		height: 310px;
+	}
 
-		header i {
-			top: 3%;
-			font-size: 30px;
-		}
+	header i {
+		top: 3%;
+		font-size: 30px;
+	}
 
-		header img {
-			width: 100%;
-			height: 350px;
-			margin-top: 10px;
-			background-repeat: no-repeat;
-			object-fit: cover;
-		}
+	header img {
+		width: 100%;
+		height: 350px;
+		margin-top: 10px;
+		background-repeat: no-repeat;
+		object-fit: cover;
+	}
 
-		.titre {
-			grid-template-columns: 85% 15%;
-			grid-template-rows: 60px;
-		}
-		
-
-		h1 {
-			font-size: xx-large;
-			justify-self: self-start;
-			padding-left: 20px;
-		}
-
-		.titre svg {
-			width: 81px;
-		    align-self: end;
-		}
-
-		main {height: 1340px;}
-
-
-		.menu .card {box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.1);}
-
-		#entrées i {font-size: xx-large;}
-
-		#entrées h2 {font-size: larger;}
-
-		#entrées h3 {font-size: larger;}
-
-		#entrées p {font-size: large;}
-
-		b {font-size: larger;}
-
-		#plats i {font-size: xx-large;}
-
-		#plats h2 {font-size: larger;}
-
-		#plats h3 {font-size: larger;}
-
-		#plats p {font-size: large;}
-
-		#desserts i {font-size: xx-large;}
-
-		#desserts h2 {font-size: larger;}
-
-		#desserts h3 {font-size: larger;}
-
-		#desserts p {font-size: large;}
-
-		button {
-			width: 40%;
-			height: 68px;
-		}
-
-		button span {
-			color: white;
-			font-size: x-large;
-		}
-
-		main {
-			background: #f2f2f2;
-			border-radius: 35px 35px 0 0;
-			height: 1450px;
-			margin-top: -45px;
-			position: relative;
-			margin: 0 60px;
-		}
-
-		body {
-			width: 100%;
-			height: auto;
-			font-family: roboto, sans-serif;
-			background: linear-gradient(176deg, rgb(173, 120, 236) 0%, rgb(240, 125, 207) 0%, rgb(171, 117, 236) 100%);
-		}
-		
-		footer {height: 150px;}
-
-		footer h2 {
-			font-size: 35px;
-			display: grid;
-			justify-items: center;
-		}
-
-		ul {
-			font-size: large;
-			flex-direction: initial;
-			justify-content: space-around;
-		}
+	.titre {
+		grid-template-columns: 85% 15%;
+		grid-template-rows: 60px;
 	}
 
 
-	@media (min-width: 1024px) {
+	h1 {
+		font-size: xx-large;
+		justify-self: self-start;
+		padding-left: 20px;
+	}
 
-		header img {
-			width: 100%;
-			margin-top: 4px;
-			background-repeat: no-repeat;
-			object-fit: cover;
-		}
+	.titre svg {
+		width: 81px;
+		align-self: end;
+	}
 
-		#fonctionnement {
-			margin-top: 51px;
-		}
 
-		h1 {font-size: 50px;}
+	.menu .card {
+		box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.1);
+	}
 
-		main {
-			background: #f2f2f2;
-			border-radius: 35px 35px 0 0;
-			height: 1290px;
-			margin-top: 120px;
-			position: relative;
-			height: 1470px;
-			margin: 0 160px;
-		}
+	#entrées i {
+		font-size: xx-large;
+	}
 
-		.titre svg {
-			width: 116px;
-			height: 111px;
-			align-self: baseline;
-		}
+	#entrées h2 {
+		font-size: larger;
+	}
 
-		.titre {
-			grid-template-columns: 85% 15%;
-			grid-template-rows: 85px;
-		}
+	#entrées h3 {
+		font-size: larger;
+	}
 
-		button span {
-			color: white;
-			font-size: x-large;
-		}
-		
-		footer {height: 170px;}
+	#entrées p {
+		font-size: large;
+	}
 
-		footer h2 {font-size: 40px;}
+	b {
+		font-size: larger;
+	}
 
-		ul {
-			font-size: x-large;
-		}
-    }
+	#plats i {
+		font-size: xx-large;
+	}
+
+	#plats h2 {
+		font-size: larger;
+	}
+
+	#plats h3 {
+		font-size: larger;
+	}
+
+	#plats p {
+		font-size: large;
+	}
+
+	#desserts i {
+		font-size: xx-large;
+	}
+
+	#desserts h2 {
+		font-size: larger;
+	}
+
+	#desserts h3 {
+		font-size: larger;
+	}
+
+	#desserts p {
+		font-size: large;
+	}
+
+	#desserts {
+		margin-bottom: 10px;
+	}
+
+	button {
+		width: 40%;
+		height: 68px;
+	}
+
+	button span {
+		color: white;
+		font-size: x-large;
+	}
+
+	main {
+		background: #f2f2f2;
+		border-radius: 35px 35px 0 0;
+		margin-top: -45px;
+		position: relative;
+		margin: 0 60px;
+		padding-bottom: 25px;
+	}
+
+	body {
+		width: 100%;
+		height: auto;
+		font-family: roboto, sans-serif;
+		background: linear-gradient(176deg, rgb(173, 120, 236) 0%, rgb(240, 125, 207) 0%, rgb(171, 117, 236) 100%);
+	}
+
+	footer {
+		height: 150px;
+	}
+
+	footer h2 {
+		font-size: 35px;
+		display: grid;
+		justify-items: center;
+	}
+
+	ul {
+		font-size: large;
+		flex-direction: initial;
+		justify-content: space-around;
+	}
+}
+
+
+@media (min-width: 1024px) {
+
+	header img {
+		width: 100%;
+		margin-top: 4px;
+		background-repeat: no-repeat;
+		object-fit: cover;
+	}
+
+	#fonctionnement {
+		margin-top: 51px;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+
+	main {
+		background: #f2f2f2;
+		border-radius: 35px 35px 0 0;
+		margin-top: 120px;
+		position: relative;
+		margin: 0 160px;
+		padding-bottom: 30px;
+	}
+
+	.titre svg {
+		width: 116px;
+		height: 111px;
+		align-self: baseline;
+	}
+
+	.titre {
+		grid-template-columns: 85% 15%;
+		grid-template-rows: 85px;
+	}
+
+	button span {
+		color: white;
+		font-size: x-large;
+	}
+
+	footer {
+		height: 170px;
+	}
+
+	footer h2 {
+		font-size: 40px;
+	}
+
+	ul {
+		font-size: x-large;
+	}
+}
