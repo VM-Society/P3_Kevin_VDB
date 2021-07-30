@@ -20,13 +20,17 @@ header p {
 
 
 form {
-    width: 100%;
-    height: 56px;
+    width: 66%;
+    height: 70px;
     padding: 5px 0px;
     display: flex;
     position: relative;
     align-items: center;
     cursor: pointer;
+}
+
+form button:nth-child(3) {
+    display: none;
 }
 
 form input {
@@ -57,7 +61,7 @@ input,
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     font-size: x-large;
     line-height: 30px;
     margin: 25px 0 10px;
@@ -86,21 +90,40 @@ header button span {
 
 
 @media (min-width: 768px) {
+    header {
+        padding: 0 20px;
+
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 68px 96px 124px;
+        height: 288px;
+    }
 
     header p {
-        opacity: 0.6;
+        text-align: left;
+        font-weight: normal;
+    }
+
+    #home {
+        grid-row: 1/2;
+        display: flex;
     }
 
     #home img {
         width: 40%;
         height: 50px;
-        margin-left: 30%;
         margin-top: 20px;
+        margin-left: 27%;
     }
 
     label img {
         height: 20px;
-        margin-left: 220px;
+    }
+
+    form input {
+        height: 100%;
+        box-shadow: 4px 8px 16px inset #DA05C2;
     }
 
     input,
@@ -109,7 +132,8 @@ header button span {
     }
 
     h1 {
-        margin: 25px 178px 10px;
+        margin: 25px 0 10px;
+        text-align: left;
     }
 
     header button {
@@ -120,70 +144,110 @@ header button span {
     header button span {
         font-size: medium;
     }
-}
-    
 
-    @media (min-width: 1024px) {
-
-        header {
-			height: 400px;
-		}
-
-        header p {
-            line-height: 62px;
-            opacity: 0.4;
-            font-size: x-large;
-        }
-        
-         #home img {
-             margin-left: 29%;
-             height: 60px;
-        }
-
-        form {height: 80px;}
-             
-        label img {
-            height: 25px;
-            margin-left: 290px;
-        }
-            
-        input,  ::placeholder {
-            font-size: x-large;
-            padding-right: 30px;
-         }
-            
-         h1 {
-            margin: 25px auto 10px;
-            font-size: xx-large;
-        }
-        
-        header button span {font-size: x-large;}
+    header button:nth-child(4) {
+        display: none;
     }
 
+    label {
+        width: 95px;
+        height: 100%;
+        /*! border: 1px solid white; */
+        position: relative;
+        left: 0;
+        display: grid;
+        border-radius: 10px 0 0 10px;
+        box-shadow: 4px 8px 16px inset #B6B6B6;
+        /*! background: #B6B6B6; */
+    }
 
-    @media (min-width: 1300px) {
-        .container, footer {
+    img {
+        align-self: center;
+        justify-self: center;
+        position: absolute;
+    }
+
+    form {
+        grid-row: 3/4;
+        top: 15px;
+    }
+
+    form button:nth-child(3) {
+        display: block;
+        width: 452px;
+        height: 100%;
+        font-size: large;
+        margin: 0;
+        border-radius: 0 40px 40px 0;
+        color: white;
+    }
+
+    form button:nth-child(3)::before {
+        content: "Explorer nos restaurants";
+    }
+
+    form+div {
+        grid-row: 2/3;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    header {
+        height: 363px;
+        grid-template-rows: 105px 134px 124px;
+    }
+
+    header p {
+        line-height: 62px;
+        font-size: x-large;
+        text-align: center;
+    }
+
+    #home img {
+        margin-left: 29%;
+        height: 60px;
+    }
+
+    form {
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    label img {
+        height: 25px;
+    }
+
+    input,
+    ::placeholder {
+        font-size: x-large;
+        padding-right: 30px;
+    }
+
+    h1 {
+        margin: 25px auto 10px;
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    header button span {
+        font-size: x-large;
+    }
+}
+
+
+@media (min-width: 1300px) {
+
+    .container,
+    footer {
         max-width: 1200px;
     }
-    
+
 
     body {
         background: linear-gradient(176deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
         display: grid;
         justify-content: center;
     }
-    }
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
+}
