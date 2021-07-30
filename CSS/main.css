@@ -203,51 +203,6 @@ footer i {
 	font-size: 12px;
 }
 
-/* 
-
-background: transparent;
-stroke-width: 15px;
-stroke: #333;
-
-*/
-
-/* .loading {
-	background-color: #FF79DA;
-	height: 500px;
-	line-height: 500px;
-}
-
-.loader {
-	width: 50px;
-	height: 50px;
-	display: inline-block;
-	vertical-align: middle;
-	position: relative;
-}
-.loader-quart {
-	border-radius: 50px;
-	border: 6px solid rgba(255,255,255,0.4);
-}
-
-loader-quart::after {
-	content: "";
-	position: absolute;
-	top: -6px; 
-	left: -6px;
-	bottom: -6px;
-	right: -6px;
-	border-radius: 50px;
-	border: 6px solid transparent;
-	border-top-color: #fff;
-	-webkit-animation:spin 1s linear infinite;
-	animation:spin 1s linear infinite;
-}
-
-@-webkit-keyframes spin {
-	0%{ -webkit-animation: rotate(0deg); transform: rotate(0deg);}
-	100%{ -webkit-animation: rotate(360deg); transform: rotate(360deg);}
-} */
-
 
 
 	@media (min-width: 768px) {
@@ -397,7 +352,7 @@ loader-quart::after {
 
 		aside {
 			margin-left: 5px;
-			background: #e1e1e1;
+			background: #bdbdbd;
 		}
 
 		aside button {
