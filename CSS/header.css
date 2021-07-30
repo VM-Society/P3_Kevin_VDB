@@ -131,7 +131,8 @@ header button span {
 
     form input {
         height: 100%;
-        box-shadow: 4px 8px 16px inset #DA05C2;
+        border-bottom: 6px solid rgb(173, 120, 236);
+        border-top: 6px solid rgb(240, 125, 207);
     }
 
     form {
@@ -173,7 +174,7 @@ header button span {
         left: 0;
         display: grid;
         border-radius: 10px 0 0 10px;
-        box-shadow: 4px 8px 16px inset #B6B6B6;
+        background: linear-gradient(176deg, rgb(173, 120, 236) 0%, rgb(240, 125, 207) 0%, rgb(171, 117, 236) 100%);
     }
 
     img {
