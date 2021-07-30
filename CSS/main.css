@@ -381,7 +381,7 @@ loader-quart::after {
 
 		#fonctionnement {
 			padding: 22px 20px;
-			background: #bdbdbd;
+			background: #e1e1e1;
 		}
 
 		svg {
@@ -397,7 +397,7 @@ loader-quart::after {
 
 		aside {
 			margin-left: 5px;
-			background: #bdbdbd;
+			background: #e1e1e1;
 		}
 
 		aside button {
@@ -424,12 +424,12 @@ loader-quart::after {
 			row-gap: 51px;
 			padding: 14px 25px 0px 0px;
 			margin: 34px 0px;
-			background: #bdbdbd;
+			background: #e1e1e1;
 		}
 
 		main {
 			flex-direction: row-reverse;
-			background: #bdbdbd;
+			background: #e1e1e1;
 			height: 720px;
 		}
 
