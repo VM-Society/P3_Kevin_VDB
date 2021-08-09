@@ -4,8 +4,8 @@
     width: 100%;
     transform: translate(-50%, -50%);
     top: 50%;
-    position: absolute;
     left: 50%;
+    position: absolute;
     z-index: 100;
     animation: dnone 3.5s cubic-bezier(0.895, 0.030, 0.685, 0.220) 3s both;
 }
@@ -19,7 +19,7 @@
     left: 12%;
     transform: translate(-50%, -50%);
     text-align: center;
-    animation: rotate-in-ver 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3 both;
+    animation: rotate-in-ver 1s  6 both;
 }
 
 .lettre {
@@ -36,6 +36,7 @@
 
     90% {
         color: #9356DC;
+      
     }
 
 }
@@ -43,12 +44,10 @@
 @keyframes rotate-in-ver {
     0% {
         transform: rotateY(-360deg);
-        transform: rotateY(-360deg);
         opacity: 0;
     }
 
     80% {
-        transform: rotateY(0deg);
         transform: rotateY(0deg);
         opacity: 1;
     }
@@ -71,14 +70,13 @@
     }
     50% {
         background: rgba(0, 0, 0, 0.5);
-
     }
+    
     100% {
               transform: scale(0) translate(-50%, -50%);
       opacity: 1;
       height: 0;
       width: 0;
-
     }
   }
 
